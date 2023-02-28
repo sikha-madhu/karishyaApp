@@ -43,7 +43,7 @@ class _splashscrenState extends State<splashscren> {
             child:Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
-                Text("Karishya",
+                Text("Karishye",
                 style:TextStyle(
                   fontSize: 66,
                   color: Color.fromARGB(255, 98, 25, 82),
