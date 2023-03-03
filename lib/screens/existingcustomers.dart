@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pujaapp/screens/notification.dart';
 import 'package:pujaapp/screens/schedule.dart';
 
 // ignore: camel_case_types
@@ -136,11 +137,22 @@ class _existingcustomerState extends State<existingcustomer> {
                           ],
                         ),
                       ),
+                      
                     ],
                   ),
                 );
               },
             )),
+            floatingActionButton:FloatingActionButton(
+                        onPressed: () {
+                          Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const NotificationScreen()));
+
+                          // do something when the button is pressed
+                        },
+                        child: Icon(Icons.notification_add_outlined),
+                        backgroundColor: Color.fromARGB(255, 130, 56, 127),
+                      ),
         bottomNavigationBar: BottomNavigationBar(
           showSelectedLabels: true,
           showUnselectedLabels: true,

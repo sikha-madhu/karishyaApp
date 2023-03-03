@@ -1,7 +1,9 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
+import 'package:pujaapp/screens/notification.dart';
+import 'package:pujaapp/screens/notify.dart';
 import 'package:pujaapp/screens/signInoage.dart';
+// ignore: camel_case_types
 class splashscren extends StatefulWidget {
   const splashscren({super.key});
 
@@ -9,6 +11,7 @@ class splashscren extends StatefulWidget {
   State<splashscren> createState() => _splashscrenState();
 }
 
+// ignore: camel_case_types
 class _splashscrenState extends State<splashscren> {
 
   @override
@@ -17,7 +20,7 @@ class _splashscrenState extends State<splashscren> {
     Timer(const Duration(seconds: 3), () =>  Navigator.push(
                       context, 
                     MaterialPageRoute(
-                      builder:(context)=> const SignInPage())));
+                      builder:(context)=> const NotificationsCarousels())));
   }
   @override
   Widget build(BuildContext context) {
